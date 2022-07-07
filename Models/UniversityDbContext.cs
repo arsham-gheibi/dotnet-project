@@ -7,8 +7,8 @@ namespace app.Models
         public UniversityDbContext(DbContextOptions options) : base(options)
         {
         }
-        public DbSet<College> Colleges { get; set; }
-        public DbSet<Student> Students { get; set; }
+        public DbSet<College>? Colleges { get; set; }
+        public DbSet<Student>? Students { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<College>(options =>

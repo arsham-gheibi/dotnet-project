@@ -1,0 +1,50 @@
+﻿@model IEnumerable<app.Models.Student>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="/content/stylesheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <table class="C_table">
+            <caption class="C_caption">لیست دانشجویان</caption>
+            <thead class="C_thead">
+                <tr>
+                    <th>شماره دانشجویی</th>
+                    <th>نام</th>
+                    <th>نام خانوادگی</th>
+                    <th>شهر محل تولد</th>
+                    <th>نام دانشکده</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var st in Model)
+                    {
+                        <tr>
+                            <td>@st.StudentID</td>
+                            <td>@st.Name</td>
+                            <td>@st.Surname</td>
+                            <td>@st.City</td>
+                            <td>@st.College.Clgname</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="C_div_link">
+       @* <a href="/Home/insert" class="C_link">افزودن دانشجوی جدید</a>*@
+       <a asp-controller="Home" asp-action="insert" class="C_link">افزودن دانشجوی جدید</a> | 
+       <a asp-controller="Home" asp-action="insert2" class="C_link">افزودن دانشجوی جدید(با تصویر)</a>
+    </div>
+
+</body>
+</html>

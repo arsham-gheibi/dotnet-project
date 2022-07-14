@@ -10,5 +10,5 @@ for Migrating the server, use this command
 
 ```sh
 dotnet ef migrations add Initial
-dotnet ef database update -c UniversityDbContext name
+dotnet ef database update -c ProductDbContext
 ```

@@ -1,36 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using app.Models;
 
 namespace app.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly UniversityDbContext _db;
-        public HomeController(UniversityDbContext db)
+        private readonly ProductDbContext _db;
+        public HomeController(ProductDbContext db)
         {
             _db = db;
-
         }
         public IActionResult Index()
         {
-            //return View(_db.Students.ToList());
-            return View(_db.Students.Include(s => s.College).ToList());
+            return View(_db.Products);
         }
 
         public IActionResult insert()
         {
-            ViewData["Clgs"] = new SelectList(_db.Colleges, "ClgID", "Clgname");
+            ViewData["Products"] = new SelectList(_db.Products, "ProductCode", "Name");
             return View();
         }
 
         [HttpPost]
-        public IActionResult insert(Student student)
+        public IActionResult insert(Product product)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && _db.Products != null)
             {
-                _db.Students.Add(student);
+                _db.Products.Add(product);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -39,39 +36,41 @@ namespace app.Controllers
 
         public IActionResult insert2()
         {
-            ViewData["Clgs"] = new SelectList(_db.Colleges, "ClgID", "Clgname");
+            ViewData["Products"] = new SelectList(_db.Products, "ProductCode", "Name");
             return View();
         }
 
         [HttpPost]
-        public IActionResult insert2(StudentViewModel st)
+        public IActionResult insert2(ProductViewModel pr)
         {
             if (ModelState.IsValid)
             {
-                Student student = new Student()
+                Product product = new Product()
                 {
-                    StudentID = st.StudentID,
-                    Name = st.Name,
-                    Surname = st.Surname,
-                    City = st.City,
-                    ClgID = st.ClgID,
-                    GPA = st.GPA
+                    ProductCode = pr.ProductCode,
+                    Name = pr.Name,
+                    Price = pr.Price,
+                    Description = pr.Description,
                 };
 
-                if (st.Image != null)
-                    student.ImageName = st.StudentID + Path.GetExtension(st.Image.FileName);
-                else
-                    student.ImageName = "DefaultImage.jpg";
+                if (pr.Image != null)
+                    product.ImageName = pr.ProductCode + Path.GetExtension(pr.Image.FileName);
 
-                _db.Students.Add(student);
-                _db.SaveChanges();
-                if (st.Image?.Length > 0)
+                else
+                    product.ImageName = "DefaultImage.jpg";
+                if (_db.Products != null)
+                {
+                    _db.Products.Add(product);
+                    _db.SaveChanges();
+                }
+
+                if (pr.Image?.Length > 0)
                 {
                     string FilePath = Path.Combine(Directory.GetCurrentDirectory(),
-                        "wwwroot", "images", student.ImageName);
+                        "wwwroot", "images", product.ImageName);
                     using (var stream = new FileStream(FilePath, FileMode.Create))
                     {
-                        st.Image.CopyTo(stream);
+                        pr.Image.CopyTo(stream);
                     }
                 }
 

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<app.Models.Student>
+﻿@model IEnumerable<app.Models.Product>
 @{
     Layout = null;
 }
@@ -17,7 +17,7 @@
             <caption class="C_caption">لیست دانشجویان</caption>
             <thead class="C_thead">
                 <tr>
-                    <th>شماره دانشجویی</th>
+                    <th>کد محصول</th>
                     <th>نام</th>
                     <th>نام خانوادگی</th>
                     <th>شهر محل تولد</th>
@@ -26,14 +26,13 @@
             </thead>
             <tbody>
                 @{
-                    foreach (var st in Model)
+                    foreach (var pr in Model)
                     {
                         <tr>
-                            <td>@st.StudentID</td>
-                            <td>@st.Name</td>
-                            <td>@st.Surname</td>
-                            <td>@st.City</td>
-                            <td>@st.College.Clgname</td>
+                            <td>@pr.ProductCode</td>
+                            <td>@pr.Name</td>
+                            <td>@pr.Price</td>
+                            <td>@pr.Description</td>
                         </tr>
                     }
                 }

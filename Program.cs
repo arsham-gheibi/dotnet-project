@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews(); // 1
 
 //رجبستر کردن دی بی کانتکس
-builder.Services.AddDbContext<UniversityDbContext>(options =>
+builder.Services.AddDbContext<ProductDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("ConStr")));
 
 var app = builder.Build();

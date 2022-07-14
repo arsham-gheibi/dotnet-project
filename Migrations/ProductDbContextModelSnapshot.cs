@@ -45,6 +45,7 @@ namespace app.Migrations
                         {
                             ProductCode = 82621,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
+                            ImageName = "images/82621.jpg",
                             Name = "بوت بوفالو",
                             Price = 285000f
                         },
@@ -52,6 +53,7 @@ namespace app.Migrations
                         {
                             ProductCode = 45246,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
+                            ImageName = "images/45246.jpg",
                             Name = "ونس",
                             Price = 220000f
                         },
@@ -59,6 +61,7 @@ namespace app.Migrations
                         {
                             ProductCode = 62183,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
+                            ImageName = "images/62183.jpg",
                             Name = "ایرجردن وان",
                             Price = 360000f
                         },
@@ -66,6 +69,7 @@ namespace app.Migrations
                         {
                             ProductCode = 87239,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
+                            ImageName = "images/87239.jpg",
                             Name = "نایک",
                             Price = 250000f
                         },
@@ -73,6 +77,7 @@ namespace app.Migrations
                         {
                             ProductCode = 94850,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
+                            ImageName = "images/94850.jpg",
                             Name = "کالج پازلی",
                             Price = 180000f
                         });

@@ -1,49 +1,18 @@
 ﻿@model IEnumerable<app.Models.Product>
-@{
-    Layout = null;
-}
+  @{ Layout = "_Layout"; }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <link href="/content/stylesheet1.css" rel="stylesheet" />
-</head>
-<body>
-    <div>
-        <table class="C_table">
-            <caption class="C_caption">لیست دانشجویان</caption>
-            <thead class="C_thead">
-                <tr>
-                    <th>کد محصول</th>
-                    <th>نام</th>
-                    <th>نام خانوادگی</th>
-                    <th>شهر محل تولد</th>
-                    <th>نام دانشکده</th>
-                </tr>
-            </thead>
-            <tbody>
-                @{
-                    foreach (var pr in Model)
-                    {
-                        <tr>
-                            <td>@pr.ProductCode</td>
-                            <td>@pr.Name</td>
-                            <td>@pr.Price</td>
-                            <td>@pr.Description</td>
-                        </tr>
-                    }
-                }
-            </tbody>
-        </table>
+  <div class="row mb-4 mt-3">
+    @{ foreach (var pr in Model) {
+    <div class="col-md-3 col-6 mt-2 mb-1">
+      <div class="card">
+        <a href="">
+          <img src="@pr.ImageName" class="card-img-top" alt="@pr.Name" />
+        </a>
+        <div class="card-body text-center">
+          <h6 class="card-title">@pr.Name</h6>
+          <h6 class="price">@pr.Price تومان</h6>
+        </div>
+      </div>
     </div>
-    <div class="C_div_link">
-       @* <a href="/Home/insert" class="C_link">افزودن دانشجوی جدید</a>*@
-       <a asp-controller="Home" asp-action="insert" class="C_link">افزودن دانشجوی جدید</a> | 
-       <a asp-controller="Home" asp-action="insert2" class="C_link">افزودن دانشجوی جدید(با تصویر)</a>
-    </div>
-
-</body>
-</html>
+    }}
+  </div>

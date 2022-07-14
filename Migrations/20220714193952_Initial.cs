@@ -26,27 +26,27 @@ namespace app.Migrations
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "ProductCode", "Description", "ImageName", "Name", "Price" },
-                values: new object[] { 45246, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", null, "ونس", 220000f });
+                values: new object[] { 45246, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", "images/45246.jpg", "ونس", 220000f });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "ProductCode", "Description", "ImageName", "Name", "Price" },
-                values: new object[] { 62183, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", null, "ایرجردن وان", 360000f });
+                values: new object[] { 62183, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", "images/62183.jpg", "ایرجردن وان", 360000f });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "ProductCode", "Description", "ImageName", "Name", "Price" },
-                values: new object[] { 82621, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", null, "بوت بوفالو", 285000f });
+                values: new object[] { 82621, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", "images/82621.jpg", "بوت بوفالو", 285000f });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "ProductCode", "Description", "ImageName", "Name", "Price" },
-                values: new object[] { 87239, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", null, "نایک", 250000f });
+                values: new object[] { 87239, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", "images/87239.jpg", "نایک", 250000f });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "ProductCode", "Description", "ImageName", "Name", "Price" },
-                values: new object[] { 94850, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", null, "کالج پازلی", 180000f });
+                values: new object[] { 94850, "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای", "images/94850.jpg", "کالج پازلی", 180000f });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -4,6 +4,10 @@ namespace app.Models
 {
     public class UniversityDbContext : DbContext
     {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Filename=MyDatabase.db");
+        }
         public UniversityDbContext(DbContextOptions options) : base(options)
         {
         }

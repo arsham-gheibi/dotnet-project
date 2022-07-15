@@ -12,11 +12,13 @@ namespace app.Controllers
             _db = db;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View(_db.Products);
         }
 
+        [HttpGet]
         public IActionResult Show(int? id)
         {
             if (id == null || _db.Products == null) return NotFound();
@@ -24,14 +26,14 @@ namespace app.Controllers
             return View(pr);
         }
 
-        public IActionResult insert()
+        [HttpGet]
+        public IActionResult Create()
         {
-            ViewData["Products"] = new SelectList(_db.Products, "ProductCode", "Name");
             return View();
         }
 
         [HttpPost]
-        public IActionResult insert(Product product)
+        public IActionResult Create(Product product)
         {
             if (ModelState.IsValid && _db.Products != null)
             {

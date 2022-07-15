@@ -29,17 +29,6 @@ a:hover {
   text-decoration: none;
 }
 
-a.link,
-a.link:hover {
-  color: hsl(0, 0%, 30%);
-}
-
-a.no-link,
-a.no-link:hover {
-  color: #11118a;
-  text-decoration: none;
-}
-
 span.navbar-toggler-icon {
   width: 1em !important;
   height: 1em !important;
@@ -47,58 +36,6 @@ span.navbar-toggler-icon {
 
 /* Class of elements */
 
-button.size {
-  border: white 3px solid;
-}
-
-img.product-file {
-  transition: all 0.3s ease-out;
-}
-
 img.card-img-top {
   padding: 10px 10px 0 10px;
-}
-
-/* Classes */
-
-.direction-ltr {
-  direction: ltr !important;
-}
-
-.box-element {
-  box-shadow: hsl(0, 0%, 80%) 0 0 16px;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 10px;
-}
-
-.product {
-  border-radius: 0 0 4px 4px;
-}
-
-.col-lg-4,
-.col-lg-6,
-.col-lg-8,
-.col-lg-12 {
-  margin-top: 10px;
-}
-
-.btn {
-  border-radius: 0;
-}
-
-.row-image {
-  width: 100px;
-}
-
-.chg-quantity:hover {
-  opacity: 0.6;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.padding-right {
-  padding-right: 30px;
 }

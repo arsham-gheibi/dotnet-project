@@ -84,3 +84,8 @@ div ul li{
   border-radius: 10px;
   margin-bottom: 2rem;
 }
+body{
+  background-image: url("../images/bg.jpg");
+  /* background-position: center; */
+  background-attachment: fixed;
+}

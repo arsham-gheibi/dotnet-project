@@ -39,3 +39,29 @@ span.navbar-toggler-icon {
 img.card-img-top {
   padding: 10px 10px 0 10px;
 }
+.card {
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 10px 0px;
+  transition: all 0.1s linear;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 80px;
+}
+.navbar {
+  box-shadow: rgb(0 0 0 / 15%) 0px 7px 10px 0px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.h1 {
+  text-shadow: rgb(0 0 0 / 15%) 1px 0 10px;
+}
+footer ul {
+  list-style: none;
+}
+footer div {
+  margin-right: 2rem;
+  margin-top: 1rem;
+}

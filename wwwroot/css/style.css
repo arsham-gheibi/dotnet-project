@@ -86,6 +86,5 @@ div ul li{
 }
 body{
   background-image: url("../images/bg.jpg");
-  /* background-position: center; */
   background-attachment: fixed;
 }

@@ -3,32 +3,27 @@
 * {
   font-family: iransansdn, tahoma !important;
 }
-
 h1,
 h2,
 h3 {
   font-size: 1.9rem;
   color: hsl(0, 0%, 30%);
 }
-
 h4,
 h5,
 h6 {
   font-size: 1.2rem;
   color: hsl(0, 0%, 30%);
 }
-
 h6.price {
   color: hsl(0, 0%, 30%);
   display: block;
 }
-
 a,
 a:hover {
   color: #fff;
   text-decoration: none;
 }
-
 span.navbar-toggler-icon {
   width: 1em !important;
   height: 1em !important;
@@ -46,7 +41,6 @@ img.card-img-top {
 .card:hover {
   transform: scale(1.05);
 }
-
 .logo {
   width: 80px;
 }
@@ -65,17 +59,17 @@ footer div {
   margin-right: 2rem;
   margin-top: 1rem;
 }
-li img{
+li img {
   width: 2rem;
 }
-div ul li{
+div ul li {
   padding: 1.5rem;
 }
-.menu{
+.menu {
   border: none;
   font-size: 2rem;
 }
-.contain{
+.contain {
   padding: 2rem;
   max-width: 40rem;
   margin: auto;
@@ -84,7 +78,7 @@ div ul li{
   border-radius: 10px;
   margin-bottom: 2rem;
 }
-body{
+body {
   background-image: url("../images/bg.jpg");
   background-attachment: fixed;
 }

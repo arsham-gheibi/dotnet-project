@@ -1,82 +1,83 @@
 @{ Layout = "_Layout"; }
 <div class="mt-5">
-<a href="/" class="btn btn-outline-danger rounded my-1 mb-3">&#8594; برگشت</a>
-<div class="contain">
-<br />
-<form
-  class="needs-validation"
-  method="POST"
-  enctype="multipart/form-data"
-  novalidate
->
-  <div class="row">
-    <div class="mb-3 ">
-      <label class="form-label" for="name">اسم محصول</label>
-      <input
-        class="form-control"
-        name="Name"
-        type="text"
-        id="name"
-        placeholder="ونس"
-        required
-      />
-    </div>
+  <a href="/" class="btn btn-outline-danger rounded my-1 mb-3">&#8594; برگشت</a>
+  <div class="contain">
+    <br />
+    <form
+      class="needs-validation"
+      method="POST"
+      enctype="multipart/form-data"
+      novalidate
+    >
+      <div class="row">
+        <div class="mb-3">
+          <label class="form-label" for="name">اسم محصول</label>
+          <input
+            class="form-control"
+            name="Name"
+            type="text"
+            id="name"
+            placeholder="ونس"
+            required
+          />
+        </div>
 
-    <div class="mb-3 ">
-      <label class="form-label" for="product-code">کد محصول</label>
-      <input
-        class="form-control"
-        name="ProductCode"
-        type="tel"
-        id="product-code"
-        placeholder="88438"
-        required
-      />
-    </div>
+        <div class="mb-3">
+          <label class="form-label" for="product-code">کد محصول</label>
+          <input
+            class="form-control"
+            name="ProductCode"
+            type="tel"
+            id="product-code"
+            placeholder="88438"
+            required
+          />
+        </div>
 
-    <div class="mb-3 ">
-      <label class="form-label" for="price">قیمت</label>
-      <input
-        class="form-control"
-        name="Price"
-        type="tel"
-        id="price"
-        placeholder="40,000"
-        min="0"
-        step="1"
-        required
-      />
-    </div>
+        <div class="mb-3">
+          <label class="form-label" for="price">قیمت</label>
+          <input
+            class="form-control"
+            name="Price"
+            type="tel"
+            id="price"
+            placeholder="40,000"
+            min="0"
+            step="1"
+            required
+          />
+        </div>
 
-    <div class="mb-3">
-      <label class="form-label" for="product-image">عکس محصول</label>
-      <input
-        class="form-control no-border"
-        type="file"
-        name="Image"
-        id="product-image"
-        accept="image/*"
-        required
-      />
-      <div class="invalid-feedback" id="product-image-invalid-feedback"></div>
-    </div>
+        <div class="mb-3">
+          <label class="form-label" for="product-image">عکس محصول</label>
+          <input
+            class="form-control no-border"
+            type="file"
+            name="Image"
+            id="product-image"
+            accept="image/*"
+            required
+          />
+          <div
+            class="invalid-feedback"
+            id="product-image-invalid-feedback"
+          ></div>
+        </div>
 
-    <div class="mb-3 ">
-      <label class="form-label" for="description">توضیحات محصول</label>
-      <textarea
-        class="form-control"
-        aria-label="With textarea"
-        name="Description"
-        id="description"
-        cols="10"
-        rows="2"
-        required
-      ></textarea>
-    </div>
+        <div class="mb-3">
+          <label class="form-label" for="description">توضیحات محصول</label>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            name="Description"
+            id="description"
+            cols="10"
+            rows="2"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <button class="btn btn-primary rounded">اضافه کردن</button>
+    </form>
   </div>
-  
-  <button class="btn btn-outline-primary rounded">اضافه کردن</button>
-</form>
-
-</div>
 </div>

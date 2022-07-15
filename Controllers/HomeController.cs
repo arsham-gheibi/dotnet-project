@@ -33,25 +33,7 @@ namespace app.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Product product)
-        {
-            if (ModelState.IsValid && _db.Products != null)
-            {
-                _db.Products.Add(product);
-                _db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View();
-        }
-
-        public IActionResult insert2()
-        {
-            ViewData["Products"] = new SelectList(_db.Products, "ProductCode", "Name");
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult insert2(ProductViewModel pr)
+        public IActionResult Create(ProductViewModel pr)
         {
             if (ModelState.IsValid)
             {

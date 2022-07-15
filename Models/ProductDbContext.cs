@@ -23,7 +23,7 @@ namespace app.Models
                         Name = "بوت بوفالو",
                         Price = 285000,
                         Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                        ImageName = "images/82621.jpg"
+                        ImageName = "82621.jpg"
                     },
                     new Product()
                     {
@@ -31,7 +31,7 @@ namespace app.Models
                         Name = "ونس",
                         Price = 220000,
                         Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                        ImageName = "images/45246.jpg"
+                        ImageName = "45246.jpg"
                     },
                     new Product()
                     {
@@ -39,7 +39,7 @@ namespace app.Models
                         Name = "ایرجردن وان",
                         Price = 360000,
                         Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                        ImageName = "images/62183.jpg"
+                        ImageName = "62183.jpg"
                     },
                     new Product()
                     {
@@ -47,7 +47,7 @@ namespace app.Models
                         Name = "نایک",
                         Price = 250000,
                         Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                        ImageName = "images/87239.jpg"
+                        ImageName = "87239.jpg"
                     },
                     new Product()
                     {
@@ -55,7 +55,7 @@ namespace app.Models
                         Name = "کالج پازلی",
                         Price = 180000,
                         Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                        ImageName = "images/94850.jpg"
+                        ImageName = "94850.jpg"
                     });
             });
         }

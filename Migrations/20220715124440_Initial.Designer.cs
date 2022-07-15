@@ -10,7 +10,7 @@ using app.Models;
 namespace app.Migrations
 {
     [DbContext(typeof(ProductDbContext))]
-    [Migration("20220714193952_Initial")]
+    [Migration("20220715124440_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,7 +47,7 @@ namespace app.Migrations
                         {
                             ProductCode = 82621,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                            ImageName = "images/82621.jpg",
+                            ImageName = "82621.jpg",
                             Name = "بوت بوفالو",
                             Price = 285000f
                         },
@@ -55,7 +55,7 @@ namespace app.Migrations
                         {
                             ProductCode = 45246,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                            ImageName = "images/45246.jpg",
+                            ImageName = "45246.jpg",
                             Name = "ونس",
                             Price = 220000f
                         },
@@ -63,7 +63,7 @@ namespace app.Migrations
                         {
                             ProductCode = 62183,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                            ImageName = "images/62183.jpg",
+                            ImageName = "62183.jpg",
                             Name = "ایرجردن وان",
                             Price = 360000f
                         },
@@ -71,7 +71,7 @@ namespace app.Migrations
                         {
                             ProductCode = 87239,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                            ImageName = "images/87239.jpg",
+                            ImageName = "87239.jpg",
                             Name = "نایک",
                             Price = 250000f
                         },
@@ -79,7 +79,7 @@ namespace app.Migrations
                         {
                             ProductCode = 94850,
                             Description = "کیفیت خوب، قیمت مناسب و ضمانت مرجوع و یا تعویض سایز یک هفته‌ای",
-                            ImageName = "images/94850.jpg",
+                            ImageName = "94850.jpg",
                             Name = "کالج پازلی",
                             Price = 180000f
                         });

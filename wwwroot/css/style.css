@@ -71,3 +71,7 @@ li img{
 div ul li{
   padding: 1.5rem;
 }
+.menu{
+  border: none;
+  font-size: 2rem;
+}

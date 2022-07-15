@@ -65,3 +65,9 @@ footer div {
   margin-right: 2rem;
   margin-top: 1rem;
 }
+li img{
+  width: 2rem;
+}
+div ul li{
+  padding: 1.5rem;
+}

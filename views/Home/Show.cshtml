@@ -1,2 +1,39 @@
-@model IEnumerable<app.Models.Product>
-  @{ Layout = "_Layout"; }
+@model app.Models.Product
+@{ Layout = "_Layout"; }
+
+<div class="container">
+  <div>
+    <a class="btn btn-outline-danger rounded rounded my-3" href="/"
+      >&#8594; برگشت</a
+    >
+    <div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <img
+                src="/@Html.DisplayFor(model => model.ImageName)"
+                alt="@Html.DisplayFor(model => model.Name)"
+                class="img-fluid"
+                id="product-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-3">
+          <div class="row">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item">
+                <h3 class="product-title">@Html.DisplayFor(model => model.Name)</h3>
+              </div>
+              <div class="list-group-item">قیمت : @Html.DisplayFor(model => model.Price) تومان</div>
+              <div class="list-group-item mt-2">کد : @Html.DisplayFor(model => model.ProductCode)</div>
+              <div class="list-group-item mt-2">@Html.DisplayFor(model => model.Description)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

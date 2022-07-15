@@ -5,12 +5,16 @@
     @{ foreach (var pr in Model) {
     <div class="col-md-3 col-6 mt-2 mb-1">
       <div class="card">
-        <a href="">
+        <a href="/Home/Show/@pr.ProductCode">
           <img src="@pr.ImageName" class="card-img-top" alt="@pr.Name" />
         </a>
         <div class="card-body text-center">
           <h6 class="card-title">@pr.Name</h6>
           <h6 class="price">@pr.Price تومان</h6>
+          <hr />
+          <a href="/Home/Show/@pr.ProductCode" class="btn btn-outline-primary"
+            >مشاهده</a
+          >
         </div>
       </div>
     </div>

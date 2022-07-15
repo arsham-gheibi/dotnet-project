@@ -11,9 +11,17 @@ namespace app.Controllers
         {
             _db = db;
         }
+
         public IActionResult Index()
         {
             return View(_db.Products);
+        }
+
+        public IActionResult Show(int? id)
+        {
+            if (id == null || _db.Products == null) return NotFound();
+            var pr = _db.Products.FirstOrDefault(p => p.ProductCode == id);
+            return View(pr);
         }
 
         public IActionResult insert()

@@ -65,3 +65,26 @@ footer div {
   margin-right: 2rem;
   margin-top: 1rem;
 }
+li img{
+  width: 2rem;
+}
+div ul li{
+  padding: 1.5rem;
+}
+.menu{
+  border: none;
+  font-size: 2rem;
+}
+.contain{
+  padding: 2rem;
+  max-width: 40rem;
+  margin: auto;
+  border: solid 1px rgb(0 0 0 / 15%);
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 10px 0px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+body{
+  background-image: url("../images/bg.jpg");
+  background-attachment: fixed;
+}
